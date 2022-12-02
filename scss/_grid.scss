@@ -1,0 +1,22 @@
+/* GRID */
+
+.uñasA {
+    grid-area: uñasA;
+  }
+  
+  .uñasB {
+    grid-area: uñasB;
+  }
+  
+  .uñasC {
+    grid-area: uñasC;
+  }
+  
+  .uñasD {
+    grid-area: uñasD;
+  }
+  
+  .gridPadre {
+    display: grid;
+    grid-template-areas: "header header header header" "nav nav nav nav" "uñasA uñasB uñasC uñasD" "uñasA uñasB uñasC uñasD" "footer footer footer footer";
+  }

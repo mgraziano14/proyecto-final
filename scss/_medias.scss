@@ -1,0 +1,9 @@
+@media (max-width: 349px) {
+    .gridPadre {
+      grid-template-areas: "header" "nav" "uñasA" "uñasB" "uñasC" "uñasD" "footer";
+    }
+  
+    .gridGaleria {
+      grid-template-areas: "header" "nav" "galeriaA" "galeriaB" "galeriaC" "galeriaD" "galeriaE" "galeriaF" "galeriaG" "galeriaH" "footer";
+    }
+  }

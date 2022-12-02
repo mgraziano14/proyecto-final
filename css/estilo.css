@@ -1,0 +1,216 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Roboto:ital,wght@1,100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  background-color: rgba(245, 204, 204, 0.753);
+}
+
+h1 {
+  color: black;
+}
+
+/* HEADER */
+.encabezado {
+  background: linear-gradient(to right, #B79891, #94716B);
+  background-position: center;
+  height: 60vh;
+  width: 100%;
+  position: relative;
+  opacity: 80%;
+  grid-area: header;
+}
+.encabezado div {
+  height: 10rem;
+  width: 50rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  color: bisque;
+  text-shadow: 4px 3px #41463d;
+}
+
+nav {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: sticky; */
+  top: 0;
+  grid-area: nav;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 2rem;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: bisque;
+}
+
+/* CONTENIDO PRNCIPAL */
+section {
+  margin: 1rem;
+  padding: 0.5rem;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+section img {
+  width: 20rem;
+  border-radius: 4px;
+}
+section button {
+  border-radius: 5px;
+  background-color: black;
+  width: 10rem;
+  height: 3rem;
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* FOOTER */
+footer {
+  padding-top: 2rem;
+  background-color: pink;
+  text-align: center;
+  grid-area: footer;
+}
+
+/* GRID */
+.uñasA {
+  grid-area: uñasA;
+}
+
+.uñasB {
+  grid-area: uñasB;
+}
+
+.uñasC {
+  grid-area: uñasC;
+}
+
+.uñasD {
+  grid-area: uñasD;
+}
+
+.gridPadre {
+  display: grid;
+  grid-template-areas: "header header header header" "nav nav nav nav" "uñasA uñasB uñasC uñasD" "uñasA uñasB uñasC uñasD" "footer footer footer footer";
+}
+
+/* GALERÍA */
+.encabezadoGaleria {
+  background: linear-gradient(to right, #B79891, #94716B);
+  background-position: center;
+  height: 60vh;
+  width: 100%;
+  position: relative;
+  opacity: 80%;
+  grid-area: header;
+}
+.encabezadoGaleria div {
+  height: 10rem;
+  width: 50rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  color: bisque;
+  text-shadow: 4px 3px #41463d;
+}
+
+.uñasGaleriaA {
+  height: 330px;
+  grid-area: galeriaA;
+}
+
+.uñasGaleriaB {
+  height: 300px;
+  grid-area: galeriaB;
+}
+
+.uñasGaleriaC {
+  height: 300px;
+  grid-area: galeriaC;
+}
+
+.uñasGaleriaD {
+  height: 300px;
+  grid-area: galeriaD;
+}
+
+.uñasGaleriaE {
+  height: 300px;
+  grid-area: galeriaE;
+}
+
+.uñasGaleriaF {
+  height: 300px;
+  grid-area: galeriaF;
+}
+
+.uñasGaleriaG {
+  height: 300px;
+  grid-area: galeriaG;
+}
+
+.uñasGaleriaH {
+  height: 300px;
+  grid-area: galeriaH;
+}
+
+.gridGaleria {
+  display: grid;
+  grid-template-areas: "header header header header" "nav nav nav nav" "galeriaA galeriaB galeriaC galeriaD" "galeriaE galeriaF galeriaG galeriaH" "footer footer footer footer";
+}
+
+li {
+  list-style-type: none;
+}
+
+@media (min-width: 350px) and (max-width: 600px) {
+  .gridPadre {
+    grid-template-areas: "header header" "nav nav" "uñasA uñasB" "uñasC uñasD" "footer footer";
+  }
+  .gridGaleria {
+    grid-template-areas: "header header" "nav nav" "galeriaA galeriaB" "galeriaC galeriaD" "galeriaE galeriaF" "galeriaG galeriaH" "footer footer";
+  }
+}
+@media (max-width: 349px) {
+  .gridPadre {
+    grid-template-areas: "header" "nav" "uñasA" "uñasB" "uñasC" "uñasD" "footer";
+  }
+  .gridGaleria {
+    grid-template-areas: "header" "nav" "galeriaA" "galeriaB" "galeriaC" "galeriaD" "galeriaE" "galeriaF" "galeriaG" "galeriaH" "footer";
+  }
+}
+.carouselHijo img {
+  width: 300px;
+  height: 500px;
+}
+
+/*# sourceMappingURL=estilo.css.map */

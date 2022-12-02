@@ -1,0 +1,26 @@
+/* CONTENIDO PRNCIPAL */
+
+section {
+    margin: 1rem;
+    padding: 0.5rem;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  
+    img {
+      width: 20rem;
+      border-radius: 4px;
+    }
+  
+    button {
+      border-radius: 5px;
+      background-color: black;
+      width: 10rem;
+      height: 3rem;
+      color: white;
+      text-transform: uppercase;
+      font-size: 5rem;
+    }
+  }

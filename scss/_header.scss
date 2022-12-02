@@ -1,0 +1,51 @@
+/* HEADER */
+
+.encabezado {
+    background: linear-gradient(to right, #B79891, #94716B);
+    background-position: center;
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    opacity: 80%;
+    grid-area: header;
+  
+    div {
+      height: 10rem;
+      width: 50rem;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: bold;
+      color: bisque;
+      text-shadow: 4px 3px #41463d;
+    }
+  }
+  
+  nav {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    /* position: sticky; */
+    top: 0;
+    grid-area: nav;
+  
+    ul li {
+      list-style-type: none;
+      display: inline-block;
+      margin: 2rem;
+    }
+  }
+  
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: bisque;
+  }
